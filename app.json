@@ -1,0 +1,51 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 20001,
+    "appName": "Jab Speed",
+    "appType": "app",
+    "version": {
+      "code": 6,
+      "name": "1.1.0"
+    },
+    "icon": "icon.png",
+    "vender": "local-development",
+    "description": "Jab wrist-speed estimates and training history for Amazfit Bip 6"
+  },
+  "permissions": ["device:os.accelerometer", "device:os.local_storage"],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0",
+      "target": "3.0",
+      "minVersion": "3.0"
+    }
+  },
+  "targets": {
+    "bip6": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/index"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        }
+      },
+      "platforms": [
+        {
+          "st": "s",
+          "dw": 390
+        }
+      ],
+      "designWidth": 390
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Jab Speed"
+    }
+  },
+  "defaultLanguage": "en-US",
+  "debug": true
+}

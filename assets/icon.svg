@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248" height="248" viewBox="0 0 248 248">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#192735"/><stop offset="1" stop-color="#0b1119"/></linearGradient>
+    <linearGradient id="glove" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#d8ff8e"/><stop offset="1" stop-color="#a8df45"/></linearGradient>
+  </defs>
+  <rect width="248" height="248" rx="56" fill="url(#bg)"/>
+  <g fill="none" stroke="#c4f568" stroke-width="10" stroke-linecap="round">
+    <path d="M38 94h35"/>
+    <path d="M28 122h38" opacity=".7"/>
+    <path d="M42 150h26" opacity=".4"/>
+  </g>
+  <g transform="rotate(24 146 124)">
+    <path d="M105 160c-12-10-17-25-17-42V88c0-25 18-42 46-42h19c26 0 43 16 43 41v38c0 19-7 32-20 41l-3 13h-65z" fill="url(#glove)"/>
+    <path d="M106 103c-20-6-32 3-32 20 0 14 10 31 28 39l14-19-9-12z" fill="#b4e85a" stroke="#15231a" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M110 101c18 7 45 8 64 0" fill="none" stroke="#587c2e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M117 66c8-5 17-7 26-6" fill="none" stroke="#edffd0" stroke-width="7" stroke-linecap="round"/>
+    <rect x="104" y="161" width="73" height="42" rx="11" fill="#c4f568" stroke="#15231a" stroke-width="6"/>
+    <path d="m144 169-13 15h11l-5 12 18-20h-13z" fill="#15231a"/>
+  </g>
+</svg>

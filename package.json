@@ -1,0 +1,22 @@
+{
+  "name": "jab-pulse",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Jab wrist-speed estimates and training history for Amazfit Bip 6",
+  "_moduleAliases": {
+    "zeppos-app-utils": "node_modules/@zeppos/zeus-cli/private-modules/zeppos-app-utils"
+  },
+  "scripts": {
+    "dev": "zeus dev",
+    "icon:build": "node scripts/render-icon.cjs",
+    "build": "zeus build",
+    "preview": "node scripts/preview.cjs",
+    "preview:upgrade": "node scripts/preview-upgrade.cjs",
+    "status": "zeus status",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@zeppos/zeus-cli": "1.9.2",
+    "sharp": "0.33.5"
+  }
+}
