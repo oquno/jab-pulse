@@ -7,7 +7,8 @@ import { JabDetector } from '../../../lib/jab-detector'
 import { HapticFeedback } from '../../../lib/haptic-feedback'
 import { loadHistory, saveSession, stats, MAX_PUNCHES } from '../../../lib/history'
 
-const THRESHOLDS = [5.5, 3.5, 2.5]
+// Require a more deliberate acceleration before opening a stroke window.
+const THRESHOLDS = [8, 6, 4]
 const LEVELS = ['低', '標準', '高']
 const SETTINGS_KEY = 'jab-settings-v1'
 const pad = n => String(n).padStart(2, '0')
@@ -119,7 +120,7 @@ Page({
     if (this.storageBlocked) { this.message = '保存不可 / 再起動してください'; this.render(); return }
     this.haptic.cancel()
     this.message = ''
-    this.session = { startedAt: Date.now(), endedAt: null, sensitivity: this.settings.sensitivity, detectorVersion: 2, punches: [] }
+    this.session = { startedAt: Date.now(), endedAt: null, sensitivity: this.settings.sensitivity, detectorVersion: 3, punches: [] }
     this.detector = new JabDetector(THRESHOLDS[this.settings.sensitivity])
     this.lastSample = null
     this.running = true
